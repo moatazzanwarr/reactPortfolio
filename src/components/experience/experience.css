@@ -1,0 +1,106 @@
+.experience{
+    width: 70%;
+    margin: 0 auto 100px auto;
+}
+
+.experience>h1{
+    color: #FFF;
+    font-size: 35px;
+    margin: 0px 0 30px 0;
+}
+
+.experience .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.experience .card{
+    display: flex;
+    gap: 20px;
+    color: #FFF;
+    background-color: #2C1250;
+    padding: 30px 90px 20px 20px;
+    border-radius: 20px;
+    border-top: 3px solid #4F228D;
+    position: relative;
+    z-index: 2;
+}
+
+.experience .card p{
+    font-size: 8px;
+    width: fit-content;
+    margin: 0 0 20px 0;
+}
+
+.experience .card a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #2C1250;
+    border: 1px solid #693B93;
+    border-radius: 10px;
+}
+
+.experience .card a:hover{
+    background: #693B93;
+    transition: .3s ease;
+}
+
+.experience .overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+.experience .overlay img{
+    width: 500px;
+}
+
+@media (min-width: 200px) and (max-width:799px){
+    .experience{
+        width: 90%;
+        overflow: hidden;
+    }
+    .experience .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .experience .card{
+        padding-right: 15px;
+    }
+
+    .experience .card .text h2{
+        font-size: 20px;
+    }
+
+    .experience .card .text p{
+        font-size: 14px;
+    }
+
+    .experience .card img{
+        width: 100px;
+    }
+}
+@media (min-width: 700px) and (max-width:1150px){
+    .experience{
+        width: 90%;
+    }
+
+    .experience .card .text h2{
+        font-size: 20px;
+    }
+    .experience .card .text p{
+        width: 200px;
+    }
+
+    .experience .card img{
+        width: 100px;
+    }
+}

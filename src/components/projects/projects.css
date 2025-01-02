@@ -1,0 +1,95 @@
+.projects .container{
+    width: 70%;
+    margin: 0 auto;
+}
+.projects .container .project{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.projects .container .project:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.projects .container .text{
+    width: 50%;
+}
+
+.projects .container .text h3{
+    color: #FFF;
+    font-size: 34px;
+    margin: 0 0 20px 0;
+}
+
+.projects .container .project:nth-child(2) .text h3{
+    text-align: right;
+}
+
+.projects .container .text p{
+    color: #FFF;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 115%;
+    position: relative;
+    z-index: 10;
+}
+
+.projects .container .project:nth-child(2) .text p{
+    left: -15%;
+}
+
+.projects .container .text .btn{
+    padding: 20px 0 0 0 ;
+    display: flex;
+}
+
+.projects .container .img{
+    width: 50% ;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+
+.projects .container .img img{
+    width: 100%;
+    border-top: 20px solid #2B0B3A;
+    border-left: 20px solid #2B0B3A;
+    border-radius: 10px;
+}
+
+.projects .container .img:nth-child(2) img{
+    border-left: 0;
+    border-right: 20px solid #2B0B3A;
+}
+
+@media (min-width:200px) and (max-width:999px){
+    .projects .container{
+        width: 90%;
+    }
+    .projects .container .text h3{
+        font-size: 20px;
+    }
+
+}
+@media (min-width:200px) and (max-width:699px){
+
+
+    .projects .container .text p{
+        font-size: 10px;
+    }
+}
+@media (min-width:1000px) and (max-width:1200px){
+
+
+    .projects .container .text p{
+        font-size: 12px;
+    }
+}
+
+
